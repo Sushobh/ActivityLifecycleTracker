@@ -16,8 +16,8 @@ The library picks up the context using a empty content provider so that you don'
 
 ## Accessing the web app
 
-If your phone and your computer are on the same wifi network, you simply have to navigate to **<PHONE_IP_ADDRESS>:8080**, <br/> 
-for example 192.1.0.33:8080 , the app also displays a notification that gives you the ip address <br/> so that you don't have to bother with finding your IP address.
+If your phone and your computer are on the same wifi network, you simply have to navigate to **<PHONE_IP_ADDRESS>:8080/actcycle**, <br/> 
+for example 192.1.0.33:8080/actcycle , the app also displays a notification that gives you the ip address <br/> so that you don't have to bother with finding your IP address.
 
 If you are running a emulator or if your phone and computer are not on the same network or if you are blocked by vpn, 
 you will need to be on usb debugging.
@@ -25,6 +25,8 @@ you will need to be on usb debugging.
 Then run this command,
 
  **adb forward tcp:8080 tcp:<PORT_OF_YOUR_CHOICE>** , for example  **adb forward tcp:8080 tcp:3000**
+ 
+ and then access the web app here http://localhost:3000/actcycle
 
 ## Troubleshooting adb connections
 
